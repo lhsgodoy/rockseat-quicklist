@@ -1,24 +1,86 @@
-#container {
-    height: 80vh;
-    width: 80%;
-    border: 1px solid rgb(52, 52, 58);
-    border-radius: 1rem;
-    margin-inline: auto;
-    margin-block: 4rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+  }
+  
+  #list h2 {
     text-align: center;
-    background-color: rgb(123, 117, 114);
-    overflow-y: scroll;
-}
-body {
-   background-color: rgb(26, 24, 24);
-}
-li {
-    list-style: none;
-    margin: 1rem;
-}
-h2 {
-    margin: 1rem 0;
-}
-
-button {
-    margin-inline: 1rem;}
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #f77f00;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f77f00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+  }
+  
+  button:hover {
+    background-color: #e06600;
+  }
+  
+  ul#listaCompras {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  ul#listaCompras li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul#listaCompras li button {
+    background-color: #e63946;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  ul#listaCompras li button:hover {
+    background-color: #c82333;
+  }
